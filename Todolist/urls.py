@@ -20,6 +20,6 @@ from todo_list import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('tasks/', views.task_list_create, name='task-list-create'),
-    path('tasks/<int:pk>/', views.task_detail_update_delete, name='task-detail-update-delete'),
+    path('tasks/', views.task_list_create, name='task_list_create'),
+    path('tasks/<int:id>/', views.task_detail_update_delete, name='task_detail_update_delete'),
 ]
